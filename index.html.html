@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kata Pelanggan tentang After Sales Ecentio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f1fafa;--surface:#ffffff;--ink:#12363a;--muted:#4c6b6f;--line:#cde6e8;--accent:#1c7c85;--brand:#5fbfc5;--star:#f59a0c;--soft:#dcf2f3;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0c2124;--surface:#133336;--ink:#e6f5f6;--muted:#9bbfc3;--line:#235055;--accent:#5fbfc5;--soft:#1a4044;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0c2124;--surface:#133336;--ink:#e6f5f6;--muted:#9bbfc3;--line:#235055;--accent:#5fbfc5;--soft:#1a4044;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Plus Jakarta Sans",system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.6}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+header{padding:18px 0;display:flex;align-items:center;gap:12px;border-bottom:1px solid var(--line)}
+header img{height:34px;width:auto;display:block}
+header span{font-weight:500;color:var(--muted);font-size:.95rem;padding-left:12px;border-left:1px solid var(--line)}
+.stars{color:var(--star);letter-spacing:.15em;font-size:1.25rem}
+h2{font-size:1.6rem;margin:0 0 6px;font-weight:800}
+.sub{color:var(--muted);margin:0 0 24px;max-width:60ch}
+section{padding:36px 0}
+.stories{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.story{background:var(--soft);border-radius:18px;padding:22px}
+.story b{display:block;font-size:.85rem;color:var(--accent);margin-bottom:8px}
+.story p{margin:0 0 12px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}
+.chip{font:inherit;font-weight:500;border:1px solid var(--line);background:var(--surface);color:var(--ink);padding:8px 16px;border-radius:999px;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--bg);font-weight:700}
+.chip:focus-visible,.cta:focus-visible{outline:3px solid var(--star);outline-offset:2px}
+.grid{columns:300px;column-gap:16px}
+.card{break-inside:avoid;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px;margin:0 0 16px}
+.card .stars{font-size:.95rem;display:block;margin-bottom:6px}
+.card p{margin:0 0 10px}
+.who{font-size:.85rem;color:var(--muted)}
+.cta-box{background:var(--accent);color:var(--bg);border-radius:22px;padding:34px 24px;text-align:center}
+.cta-box h2{margin-bottom:10px}
+.cta{display:inline-block;margin-top:14px;background:var(--bg);color:var(--accent);font-weight:800;padding:12px 26px;border-radius:999px;text-decoration:none}
+footer{padding:28px 0 40px;color:var(--muted);font-size:.85rem}
+button.cta{font:inherit;border:0;cursor:pointer}
+.fab{position:fixed;right:0;bottom:calc(88px + env(safe-area-inset-bottom,0px));z-index:20;display:flex;flex-direction:column;align-items:flex-end;gap:10px}
+.fab-btn{position:relative;font:inherit;font-weight:700;display:flex;align-items:center;gap:10px;border:0;cursor:pointer;background:#128c4a;color:#fff;padding:12px 16px 12px 18px;border-radius:999px 0 0 999px;box-shadow:0 6px 20px rgba(0,0,0,.25)}
+.fab-btn::before{content:"";position:absolute;inset:0;border-radius:inherit;border:2px solid #128c4a;animation:ring 2s ease-out infinite;pointer-events:none}
+.fab-ico{display:inline-block;font-size:1.25rem;animation:spin 6s linear infinite}
+.fab-btn:focus-visible,.opt:focus-visible{outline:3px solid var(--star);outline-offset:2px}
+.fab-menu{display:none;margin-right:12px;width:min(300px,calc(100vw - 32px));background:var(--surface);color:var(--ink);border:1px solid var(--line);border-radius:16px;padding:14px;box-shadow:0 10px 30px rgba(0,0,0,.25)}
+.fab.open .fab-menu{display:block}
+.fab-menu p{margin:0 0 10px;font-weight:700}
+.hrs{font-size:.8rem;color:var(--muted);margin:-4px 0 4px}
+.opt{display:block;text-decoration:none;color:var(--ink);background:var(--soft);border-radius:12px;padding:12px 14px;margin-top:8px}
+.opt b{display:block}
+.opt span{font-size:.85rem;color:var(--muted)}
+@keyframes ring{0%{transform:scale(1);opacity:.7}100%{transform:scale(1.35,1.6);opacity:0}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@media (prefers-reduced-motion:reduce){.fab-btn::before,.fab-ico{animation:none}}
+svg use{fill:none;stroke:currentColor;stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round}
+.banner{position:relative;overflow:hidden;margin-top:20px;height:150px;border-radius:24px;background:linear-gradient(135deg,#5fbfc5,#8fdadd);display:flex;align-items:center;justify-content:center;gap:34px;color:#fff}
+.banner svg{width:46px;height:46px;opacity:.4;flex:none}
+.banner .big{width:84px;height:84px;opacity:1;background:rgba(255,255,255,.3);border-radius:50%;padding:18px}
+.hero{text-align:center;padding:36px 0 24px}
+.hero h1{font-size:clamp(2.2rem,7vw,4.2rem);line-height:1.08;font-weight:800;margin:0 auto 18px;max-width:16ch;letter-spacing:-.02em}
+.hero p{max-width:56ch;margin:0 auto;color:var(--muted);font-size:1.1rem}
+.start{margin-top:22px}
+.pick{text-align:center;padding:30px 0 20px}
+.pick h2{font-size:clamp(1.6rem,4.5vw,2.4rem);letter-spacing:-.01em}
+.prods{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:12px;margin-top:26px}
+.prod{font:inherit;font-weight:500;background:none;border:2px solid transparent;border-radius:16px;padding:14px 6px;color:var(--ink);cursor:pointer}
+.prod svg{width:68px;height:68px;display:block;margin:0 auto 10px}
+.prod:hover{background:var(--soft)}
+.prod[aria-pressed="true"]{border-color:var(--accent);background:var(--soft)}
+.prod:focus-visible{outline:3px solid var(--star);outline-offset:2px}
+.sel{font-size:.85rem;color:var(--accent);margin:-2px 0 8px;font-weight:700}
+details.g{background:var(--surface);border:1px solid var(--line);border-radius:14px;margin-bottom:10px;padding:0 16px}
+details.g summary{display:flex;align-items:center;gap:12px;cursor:pointer;font-weight:700;padding:14px 0;list-style:none}
+details.g summary::-webkit-details-marker{display:none}
+details.g summary svg{width:34px;height:34px;flex:none;color:var(--accent)}
+details.g summary span{flex:1}
+details.g summary::after{content:"+";font-size:1.4rem;color:var(--accent);line-height:1}
+details.g[open] summary::after{content:"\2212"}
+details.g summary:focus-visible{outline:3px solid var(--star);outline-offset:2px}
+details.g ul{margin:0 0 14px;padding-left:20px;color:var(--muted)}
+details.g li{margin-bottom:8px;max-width:70ch}
+.more{text-align:center;margin-top:22px}
+.more .cta{margin:8px 0 0;background:var(--accent);color:var(--bg)}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="i-tumbler" viewBox="0 0 64 64"><path d="M18 8h28v7H18zM20 15h24l-3 39a4 4 0 0 1-4 4H27a4 4 0 0 1-4-4z"/><path d="M44 24h6a4 4 0 0 1 4 4v7a4 4 0 0 1-4 4h-5M26 28h12"/></symbol>
+<symbol id="i-slow" viewBox="0 0 64 64"><path d="M20 12h24M24 12v12h16V12M16 24h32v22H16zM12 46h40v10H12zM48 34h8v8h-8z"/><path d="M29 35h6"/></symbol>
+<symbol id="i-jp" viewBox="0 0 64 64"><path d="M10 24h20l-2 28a3 3 0 0 1-3 3h-10a3 3 0 0 1-3-3zM34 24h20l-2 28a3 3 0 0 1-3 3H39a3 3 0 0 1-3-3z"/><path d="M45 6v18M8 24h24M32 24h24"/></symbol>
+<symbol id="i-cp" viewBox="0 0 64 64"><path d="M24 8h16v14H24zM20 22h24v28a6 6 0 0 1-6 6H26a6 6 0 0 1-6-6z"/><path d="M32 13v4M26 40h12"/></symbol>
+<symbol id="i-cl" viewBox="0 0 64 64"><path d="M22 10h20v16H22zM8 26h48l-4 24a6 6 0 0 1-6 6H18a6 6 0 0 1-6-6z"/><path d="M56 32h4v10h-4M32 15v6M20 40h24"/></symbol>
+<symbol id="i-chat" viewBox="0 0 64 64"><path d="M10 12h44v30H30l-12 10V42h-8z"/></symbol>
+</defs></svg>
+<div class="wrap">
+<header><img src="data:image/png;base64,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" alt="Ecentio"><span>After Sales</span></header>
+
+<div class="banner" aria-hidden="true"><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#i-tumbler"/></svg><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#i-slow"/></svg><svg class="big" viewBox="0 0 64 64" aria-hidden="true"><use href="#i-chat"/></svg><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#i-jp"/></svg><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#i-cp"/></svg><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#i-cl"/></svg></div>
+<div class="hero">
+<h1>Layanan Servis dan Klaim Ecentio</h1>
+<p>Mari buat produk Ecentio kamu berfungsi seperti seharusnya. Ceritakan kendalanya, dan tim After Sales akan membantu sampai tuntas.</p>
+<button class="cta start" type="button" data-open>Mulai</button>
+</div>
+
+<div class="pick">
+<h2>Pilih produk yang bermasalah.</h2>
+<p class="sub" style="margin:8px auto 0">Lihat panduan pemakaiannya di bawah. Kalau masih ada kendala, hubungi After Sales dan nama produknya ikut terisi di pesan.</p>
+<div class="prods" id="prods">
+<button class="prod" type="button" aria-pressed="false" data-p="Tumbler"><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#i-tumbler"/></svg>Tumbler</button>
+<button class="prod" type="button" aria-pressed="false" data-p="Slow Juicer"><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#i-slow"/></svg>Slow Juicer</button>
+<button class="prod" type="button" aria-pressed="false" data-p="Juicer Portable"><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#i-jp"/></svg>Juicer Portable</button>
+<button class="prod" type="button" aria-pressed="false" data-p="Chopper Portable"><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#i-cp"/></svg>Chopper Portable</button>
+<button class="prod" type="button" aria-pressed="false" data-p="Chopper Listrik"><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#i-cl"/></svg>Chopper Listrik</button>
+</div>
+</div>
+
+<section id="guide">
+<h2>Panduan pemakaian dan perawatan</h2>
+<p class="sub">Tips umum supaya produkmu awet. Untuk detail tiap model, ikuti buku panduan di dalam kemasan.</p>
+<details class="g" data-g="Tumbler" open><summary><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#i-tumbler"/></svg><span>Tumbler: anti karat, awet, dan tidak bocor</span></summary><ul><li>Cuci setelah dipakai. Jangan biarkan sisa minuman, terutama susu, kopi, dan minuman manis, mengendap berhari-hari di dalam tumbler.</li><li>Hindari menyimpan air garam, minuman sangat asam (cuka, perasan jeruk), atau pemutih dalam waktu lama. Ini bisa memicu noda dan karat pada bagian dalam.</li><li>Cuci dengan spons lembut dan sabun cuci piring. Jangan pakai spons kawat atau pembersih abrasif karena bisa menggores lapisan dalam.</li><li>Lepas karet penutup dan cuci rutin. Kalau karet retak atau melar, ganti supaya tutup tetap rapat dan tidak bocor.</li><li>Setelah dicuci, keringkan dan simpan dengan tutup terbuka supaya tidak berbau apek.</li><li>Untuk bau atau noda membandel, rendam air hangat dengan soda kue sekitar 30 menit, lalu bilas bersih.</li><li>Jangan isi minuman berkarbonasi atau cairan mendidih penuh sampai tutup, dan jangan masukkan ke microwave.</li></ul></details>
+<details class="g" data-g="Slow Juicer"><summary><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#i-slow"/></svg><span>Slow Juicer: cara pakai yang benar supaya awet</span></summary><ul><li>Pasang semua komponen sampai terkunci sebelum dinyalakan. Kalau mesin tidak jalan, biasanya ada bagian yang belum terpasang pas.</li><li>Potong buah atau sayur yang besar atau berserat panjang. Buang biji keras dan kulit tebal, dan hindari es batu atau bahan beku keras.</li><li>Masukkan bahan sedikit demi sedikit. Tunggu yang sebelumnya terproses dulu, dan jangan ditekan paksa memakai tangan.</li><li>Jangan menyalakan mesin dalam keadaan kosong, dan beri jeda kalau dipakai untuk porsi banyak supaya motor tidak terlalu panas.</li><li>Bilas dan bersihkan segera setelah dipakai. Ampas yang mengering jauh lebih sulit dibersihkan. Pakai sikat pembersih bawaan, dan jangan rendam bagian motor.</li><li>Keringkan semua komponen sebelum disimpan. Jangan memakai air mendidih untuk bagian plastik.</li></ul></details>
+<details class="g" data-g="Juicer Portable"><summary><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#i-jp"/></svg><span>Juicer Portable: tips pakai dan perawatan</span></summary><ul><li>Isi daya sampai penuh sebelum dipakai, dan gunakan kabel pengisi yang sesuai.</li><li>Jangan mengisi melebihi garis batas. Potong buah kecil-kecil dan tambahkan sedikit cairan supaya mudah terblender.</li><li>Pakai sistem pulse (tekan-lepas) untuk hasil lebih halus. Hindari es batu besar atau bahan sangat keras.</li><li>Pastikan tutup dan ring terpasang rapat. Mesin biasanya tidak mau menyala kalau pengaman belum terkunci.</li><li>Membersihkan: isi air dan setetes sabun, nyalakan beberapa detik, lalu bilas. Jangan rendam bagian bawah atau lubang pengisian daya.</li><li>Jika gelasnya kaca, hindari perubahan suhu mendadak, misalnya dari air panas langsung ke air dingin.</li></ul></details>
+<details class="g" data-g="Chopper Portable"><summary><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#i-cp"/></svg><span>Chopper Portable: tips pakai dan perawatan</span></summary><ul><li>Isi daya penuh sebelum dipakai, dan pasang tutup sampai terkunci.</li><li>Potong bumbu atau daging menjadi potongan kecil dan jangan melebihi batas isi. Hindari tulang, es batu, dan bahan yang sangat keras.</li><li>Nyalakan dengan sentuhan pendek berulang. Jangan terus-menerus terlalu lama supaya baterai dan motor tidak cepat lemah.</li><li>Bersihkan setelah dipakai dan hati-hati karena pisaunya tajam. Jangan rendam bagian motor atau lubang pengisian daya, lalu keringkan.</li><li>Untuk bau bawang atau bumbu yang menempel, cuci dengan air hangat dan soda kue, atau gosok perasan lemon.</li></ul></details>
+<details class="g" data-g="Chopper Listrik"><summary><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#i-cl"/></svg><span>Chopper Listrik: tips pakai dan perawatan</span></summary><ul><li>Pasang mangkuk dan penutup motor sampai terkunci sebelum dicolokkan.</li><li>Potong bahan sekitar 2–3 cm dan jangan melebihi kapasitas. Nyalakan dengan sentuhan pendek berulang agar hasil merata.</li><li>Beri jeda kalau dipakai untuk porsi banyak supaya motor tidak panas. Hindari tulang dan bahan yang sangat keras.</li><li>Cabut dari listrik sebelum dibersihkan. Mangkuk dan pisau bisa dicuci, sedangkan bagian motor cukup dilap dengan kain lembap.</li><li>Pegang pisau hati-hati dan simpan dalam keadaan kering.</li></ul></details>
+<p class="more">Sudah dicoba tapi masih ada kendala? <button class="cta" type="button" data-open>Hubungi After Sales</button></p>
+</section>
+
+<section>
+<h2>Dari kendala sampai tuntas</h2>
+<p class="sub">Tiga pelanggan yang awalnya punya masalah dengan produknya.</p>
+<div class="stories">
+<div class="story"><b>Botol rusak, diganti</b><p>“Awalnya sempat kecwwa dpat botol yg rijec ..tp mendapatkan feedback baik penukaran jd kcewa itu terobati ..thankyu”</p><span class="who">Pelanggan Ecentio</span></div>
+<div class="story"><b>Juicer bermasalah, dapat set pengganti</b><p>“pelayanan aftersalesnya sangat baik, tim memberikan solusi yg tepat dan bisa mengatasi masalah yang saya alami dengan memberikan set juicer pengganti karena produk saya masih dalam masa garansi. Terima kasih banyak”</p><span class="who">Pelanggan Ecentio</span></div>
+<div class="story"><b>Masalah dua kali, dua kali diganti baru</b><p>“Respon cepat, walau dari awal beli sudah bermasalah, tapi bisa di tukar, dan setelah sekian bulan digunakan kembali berkendala, karena masih dalam cakupan garansi jadi masih diganti baru, itu yang membuat saya sebagai konsumen walau kurang puas diawal tapi dilihat responsibility &amp; quick response nya ok, kekecewaan berganti syukur, Terima kasih ya.”</p><span class="who">Pelanggan Ecentio</span></div>
+</div>
+</section>
+
+<section>
+<h2>Kata pelanggan</h2>
+<p class="sub">Kutipan dari survei kepuasan pelanggan Ecentio (119 respons). Pilih topik untuk melihat ulasan yang relevan.</p>
+<div class="chips" id="chips" role="group" aria-label="Filter ulasan">
+<button class="chip" data-f="all" aria-pressed="true">Semua</button>
+<button class="chip" data-f="cepat" aria-pressed="false">Respon cepat</button>
+<button class="chip" data-f="garansi" aria-pressed="false">Garansi dan penukaran</button>
+<button class="chip" data-f="solusi" aria-pressed="false">Solusi yang membantu</button>
+</div>
+<div class="grid" id="grid">
+<article class="card" data-t="cepat"><span class="stars" aria-hidden="true">★★★★★</span><p>“Admin fast respon, pelayanan ramah dan baik dari awal sampai selesai”</p><span class="who">Pelanggan Ecentio</span></article>
+<article class="card" data-t="garansi"><span class="stars" aria-hidden="true">★★★★★</span><p>“Pelayanan service center nya best. Langsung ditangani dan ganti dgn yang baru. Semoga kedepannya Ecentio semakin berkembang dgn baik dan meningkatkan pelayanannya. Terimakasih Ecentio.”</p><span class="who">Pelanggan Ecentio</span></article>
+<article class="card" data-t="solusi"><span class="stars" aria-hidden="true">★★★★★</span><p>“Love banget after salesnya bener bener solutif dan membantu. Udah dari lama aku pake ecentio, dari mulai tumblr sampe blendernya jugaa. Tolong pertahankan yaa kinerja baiknyaa”</p><span class="who">Pelanggan Ecentio</span></article>
+<article class="card" data-t="garansi"><span class="stars" aria-hidden="true">★★★★★</span><p>“Saya suka sekali dengan respon dan tanggung jawabnya, saya mengajukan klaim garansi sales langsung memberikan arahan-arahan untuk proses klaim. Terimakasih banyak ecentio”</p><span class="who">Pelanggan Ecentio</span></article>
+<article class="card" data-t="cepat"><span class="stars" aria-hidden="true">★★★★★</span><p>“Respon sangat baik &amp; memberikan solusi dengan cepat”</p><span class="who">Pelanggan Ecentio</span></article>
+<article class="card" data-t="solusi"><span class="stars" aria-hidden="true">★★★★★</span><p>“Terima kasih atas respon dan pemecahan masalah yang sangat membantu dan solutif, rekomended bgt ecentio”</p><span class="who">Pelanggan Ecentio</span></article>
+<article class="card" data-t="garansi"><span class="stars" aria-hidden="true">★★★★★</span><p>“Terimakasih banyak kak proses klaim garansi nya mudah dan diproses dengan cepat. Makin senang dengan produk ecentio. Semoga selalu amanah dan sukses selalu”</p><span class="who">Pelanggan Ecentio</span></article>
+<article class="card" data-t="cepat"><span class="stars" aria-hidden="true">★★★★★</span><p>“Pelayanannya sangat baik.. cepat merespon komplain.. dan memberi solusi dengan cepat.. keren.. pertahankan ya”</p><span class="who">Pelanggan Ecentio</span></article>
+<article class="card" data-t="garansi"><span class="stars" aria-hidden="true">★★★★★</span><p>“baru kali ini klaim garansi, dan bener2 puas karena kalo rusak barang ditukar/kembali uang. semuanya udah oke, sukses selalu utk ecentio!”</p><span class="who">Pelanggan Ecentio</span></article>
+<article class="card" data-t="solusi"><span class="stars" aria-hidden="true">★★★★★</span><p>“Kakaknya baik sekali. Kasih solusinya juga sangat membantu. Terima kasih kakak solusinya sangat membantu.”</p><span class="who">Pelanggan Ecentio</span></article>
+<article class="card" data-t="cepat"><span class="stars" aria-hidden="true">★★★★★</span><p>“Komplain custumer ditangani dengan cepat dan responsif. Service custumer sangat baik”</p><span class="who">Pelanggan Ecentio</span></article>
+<article class="card" data-t="garansi"><span class="stars" aria-hidden="true">★★★★★</span><p>“Sales nya sangat baik membantu dalam proses penukaran. Semoga Ecentio semakin sukses, aamiin”</p><span class="who">Pelanggan Ecentio</span></article>
+<article class="card" data-t="cepat"><span class="stars" aria-hidden="true">★★★★★</span><p>“Sangat responsif dan membuat client trust”</p><span class="who">Pelanggan Ecentio</span></article>
+</div>
+</section>
+
+<section>
+<div class="cta-box">
+<h2>Ada kendala dengan produk Ecentio?</h2>
+<p>Tim After Sales siap membantu sampai selesai.</p>
+<button class="cta" type="button" data-open>Hubungi After Sales</button>
+</div>
+</section>
+
+<footer>Ulasan ditampilkan sesuai tulisan asli pelanggan dari survei kepuasan Ecentio, tanpa nama.</footer>
+</div>
+<div class="fab" id="fab">
+<div class="fab-menu" id="fabMenu" role="dialog" aria-label="Pilih WhatsApp After Sales">
+<p>Belanja di mana?</p>
+<div class="sel" id="sel"></div>
+<div class="hrs">Admin tersedia Senin–Jumat, 08.30–17.30. Pesan dibalas berkala.</div>
+<a class="opt" href="https://wa.me/6281410556199?text=Hi%20Lovecentio%F0%9F%92%99%0ASelamat%20datang%20di%20layanan%20komplain%20dan%20klaim.%0AAgar%20bisa%20kami%20cek%20dan%20proses%20cepat%2C%20mohon%20kirimkan%20data%20berikut%20ya%3A%0A1.%20No%20pesanan%2Fno%20invoice%20%3A%0A2.%20Nama%20toko%20pembelian%20%3A%0A3.%20Keluhan%20%3A%0A4.%20Resi%20kemasan%20produk%20yang%20bermasalah%20%3A%0A5.%20Foto%2Fvideo%20kendala%20produk%20%3A%0A%0AMohon%20lengkapi%20data%20di%20atas%20untuk%20mempercepat%20penyelesaiannya.%20Terima%20kasih%E2%98%BA" target="_blank" rel="noopener"><b>Shopee / Lazada / Tokopedia</b><span>WhatsApp +62 814-1055-6199</span></a>
+<a class="opt" href="https://wa.me/6285218740039?text=Hi%20Lovecentio%F0%9F%92%99%0ASelamat%20datang%20di%20layanan%20komplain%20dan%20klaim.%0AAgar%20bisa%20kami%20cek%20dan%20proses%20cepat%2C%20mohon%20kirimkan%20data%20berikut%20ya%3A%0A1.%20No%20pesanan%2Fno%20invoice%20%3A%0A2.%20Nama%20toko%20pembelian%20%3A%0A3.%20Keluhan%20%3A%0A4.%20Resi%20kemasan%20produk%20yang%20bermasalah%20%3A%0A5.%20Foto%2Fvideo%20kendala%20produk%20%3A%0A%0AMohon%20lengkapi%20data%20di%20atas%20untuk%20mempercepat%20penyelesaiannya.%20Terima%20kasih%E2%98%BA" target="_blank" rel="noopener"><b>TikTok</b><span>WhatsApp +62 852-1874-0039</span></a>
+</div>
+<button class="fab-btn" id="fabBtn" type="button" aria-expanded="false" aria-controls="fabMenu"><span class="fab-ico" aria-hidden="true">💬</span>Chat After Sales</button>
+</div>
+<script>
+(function(){
+var T=["Hi Lovecentio\uD83D\uDC99","Selamat datang di layanan komplain dan klaim.","Agar bisa kami cek dan proses cepat, mohon kirimkan data berikut ya:","PRODUK","1. No pesanan/no invoice :","2. Nama toko pembelian :","3. Keluhan :","4. Resi kemasan produk yang bermasalah :","5. Foto/video kendala produk :","","Mohon lengkapi data di atas untuk mempercepat penyelesaiannya. Terima kasih\u263A"];
+var prod='',sel=document.getElementById('sel');
+function msg(){return T.filter(function(l){return l!=='PRODUK'||prod}).map(function(l){return l==='PRODUK'?'Produk: '+prod:l}).join('\n')}
+function upd(){document.querySelectorAll('.opt').forEach(function(a){a.href=a.href.split('?')[0]+'?text='+encodeURIComponent(msg())});sel.textContent=prod?'Produk: '+prod:''}
+document.getElementById('prods').addEventListener('click',function(e){
+var b=e.target.closest('.prod');if(!b)return;prod=b.getAttribute('data-p');
+document.querySelectorAll('.prod').forEach(function(c){c.setAttribute('aria-pressed',c===b?'true':'false')});
+upd();document.querySelectorAll('details.g').forEach(function(d){d.open=d.getAttribute('data-g')===prod})});
+upd();
+})();
+</script>
+<script>
+(function(){
+var fab=document.getElementById('fab'),btn=document.getElementById('fabBtn');
+function set(o){fab.classList.toggle('open',o);btn.setAttribute('aria-expanded',o?'true':'false')}
+btn.addEventListener('click',function(){set(!fab.classList.contains('open'))});
+document.querySelectorAll('[data-open]').forEach(function(b){b.addEventListener('click',function(){set(true)})});
+document.addEventListener('keydown',function(e){if(e.key==='Escape')set(false)});
+})();
+</script>
+<script>
+document.getElementById('chips').addEventListener('click',function(e){
+var b=e.target.closest('.chip');if(!b)return;
+var f=b.getAttribute('data-f');
+document.querySelectorAll('.chip').forEach(function(c){c.setAttribute('aria-pressed',c===b?'true':'false')});
+document.querySelectorAll('#grid .card').forEach(function(c){c.style.display=(f==='all'||c.getAttribute('data-t')===f)?'':'none'});
+});
+</script>
+</body>
+</html>
